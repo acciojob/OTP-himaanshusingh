@@ -4,24 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTP Verification</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- prettier-ignore -->
     <div class="container">
       <h1 id="verification_heading">Verify Your Account</h1>
-      <p id="verification_subtext">
-        We've sent a six-digit verification code to your email. Please enter it
-        below to confirm your account.
-      </p>
-      <!-- prettier-ignore -->
+      <p id="verification_subtext">We've sent a six-digit verification code to your email. Please enter it
+      below to confirm your account.</p>
       <div class="code-container">
-            <input type="number" id="code-1" class="code" placeholder="0" min="0" max="9" required>
-            <input type="number" id="code-2" class="code" placeholder="0" min="0" max="9" required>
-            <input type="number" id="code-3" class="code" placeholder="0" min="0" max="9" required>
-            <input type="number" id="code-4" class="code" placeholder="0" min="0" max="9" required>
-            <input type="number" id="code-5" class="code" placeholder="0" min="0" max="9" required>
-            <input type="number" id="code-6" class="code" placeholder="0" min="0" max="9" required>
-        </div>
+        <input type="text" id="code-1" class="code" placeholder="0" maxlength="1" />
+        <input type="text" id="code-2" class="code" placeholder="0" maxlength="1" />
+        <input type="text" id="code-3" class="code" placeholder="0" maxlength="1" />
+        <input type="text" id="code-4" class="code" placeholder="0" maxlength="1" />
+        <input type="text" id="code-5" class="code" placeholder="0" maxlength="1" />
+        <input type="text" id="code-6" class="code" placeholder="0" maxlength="1" />
+      </div>
       <button class="verify-btn">Verify Account</button>
     </div>
     <script src="script.js"></script>
